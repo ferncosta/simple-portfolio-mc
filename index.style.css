@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@600&display=swap');
+
+:root{
+    --backgorund-color: rgb(249, 250, 250);
+    --font-color: #000000;
+    --resume-color: #A2D2FF;
+    --projects-color: #FFC8DD;
+    --events-color:#BDE0FE;
+    --contact-color: #CDB4DB;
+    
+    --main-font: 'Work Sans', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+
+    --title-font-size: 60px;
+    --main-font-size: 22px;
+    --sec-font-size: 16px;
+}
+
+html{
+    background-color: var(--backgorund-color);
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.header{
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.header__home{
+    display: flex;
+    align-items: center;
+}
+
+.header__home span{
+    font-weight: bold;
+}
+
+.header__home__icon{
+    width: 25px;
+}
+
+.header__home__button{
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 22px;
+    padding: 0 15px;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header__menu__links:first-child{
+    border-left: none !important;
+}
+
+.header__menu__links{
+    padding: 0 10px;
+    border-left: 1px #000 solid;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.prelude{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.prelude__container {
+    display: flex;
+    gap: 20px;
+    max-width: 1180px;
+}
+
+.prelude__image{
+    border-radius: 300px;
+    width: 540px;
+}
+
+.prelude__content{
+    color: var(--font-color);
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prelude__content__title{
+    font-size: 60px;
+    margin: 0% 0% 3% 0%;
+    padding-left: 20px;
+}
+
+.prelude__content__subtitle{
+    font-size: 22px;
+    margin: 0% 0% 2% 0%;
+    padding-left: 20px;
+}
+
+.prelude__content__text{
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    margin: 0% 0% 5% 0%;
+    padding-right: 225px;
+    padding-left: 20px;
+    line-height: 1.6em;
+    letter-spacing: normal;
+}
+
+.prelude__links{
+    display: flex;
+    gap: 20px;
+
+}
+
+.prelude__links__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 22px;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    transition: background 500ms;
+}
+
+.prelude__links__button:hover{
+    background-color: #fdfae6;
+}
+
+
+.prelude__links__button span {
+    height: fit-content;
+}
+
+.resume-color{
+    background-color: var(--resume-color);
+}
+
+.project-color{
+    background-color: var(--projects-color);
+}
+
+.events-color{
+    background-color: var(--events-color);
+}
+
+.contact-color{
+    background-color: var(--contact-color);
+}
+
+.footer{
+    border-top: 1px gainsboro solid;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    /* flex: 255px 1 0; */
+    flex-grow: 4;
+    /* align-items: center; */
+    /* padding: 0 40px 0 40px; */
+    /* height: 20vh; */
+    
+}
+.flex-grow{
+    flex: 1 1 0;
+}
+
+.footer__titles{
+    font-family: var(--main-font);
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.footer__content{
+    font-family: var(--secondary-font);
+    font-size: var(--sec-font-size);
+    margin-top: 0%;
+}
+
+.footer__social__links{
+    display: flex;
+    list-style: none;
+}
+
+.copywriting__content{
+    font-size: 13px;
+    font-family: var(--secondary-font);
+    margin: 0%;
+}
+
+@media (max-width: 1024px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px 0px 15px;
+    }
+
+    .header {
+        padding: 0%;
+        margin: 0;
+        padding-bottom: 60px;
+    }
+
+    .header__home__button{
+        font-size: 26px;
+    }
+
+    .header__home__span{
+        font-size: 14px;
+    }
+
+    .header__menu{
+        display: none;
+    }
+
+    .prelude{
+        display: block;
+    }
+
+    .prelude__container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        max-width: 100vw;
+    }
+
+    .prelude__content__title{
+        font-size: 50px;
+        padding-left: 10px;
+    }
+
+    .prelude__content__subtitle{
+        padding-left: 10px;
+    }
+
+    .prelude__content__text{
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .prelude__image{
+        width: 100%;
+        height: auto;
+    }
+
+    .prelude__links__button{
+        width: 90px;
+        height: 80px;
+    }
+}
+
